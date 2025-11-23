@@ -1,0 +1,11 @@
+{
+    "word": "your_word_here",
+    "options": "randomized_char_options_here",
+    "PlayersFirstName": {
+      "guesses": 0,
+      "hints": 0,
+      "revealedWordPositions": [],
+      "disabledOptionIndices": [],
+      "solved": false
+    }
+  }

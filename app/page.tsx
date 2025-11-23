@@ -58,7 +58,7 @@ export default async function Home({ searchParams }: HomeProps) {
               Word game
             </h1>
             <p className="text-sm text-zinc-600 dark:text-zinc-400">
-              Enter your password to join. (Password is just your player name.)
+              Enter your password to join.
             </p>
           </div>
 

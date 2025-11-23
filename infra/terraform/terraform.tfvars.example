@@ -1,0 +1,8 @@
+aws_region        = "us-east-1"
+route53_zone_id   = "######" # replace with your actual hosted zone ID
+zone_root_domain  = "yourdomain.com"
+subdomain         = "word-game"
+target_ipv4       = "0.0.0.0"      # replace with your NAS public IP
+ttl               = 300
+
+

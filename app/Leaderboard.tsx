@@ -12,20 +12,16 @@ export default function Leaderboard({ players }: Props) {
       ...data,
     }))
     .sort((a, b) => {
-      // Solved players first
       if (a.solved !== b.solved) {
         return a.solved ? -1 : 1;
       }
 
-      // Composite score: guesses + (hints * 3)
-      // Each hint is "worth" roughly three extra guesses.
       const scoreA = a.guesses + a.hints * 3;
       const scoreB = b.guesses + b.hints * 3;
       if (scoreA !== scoreB) {
         return scoreA - scoreB;
       }
 
-      // Tie-breakers if composite score is equal
       if (a.guesses !== b.guesses) {
         return a.guesses - b.guesses;
       }
